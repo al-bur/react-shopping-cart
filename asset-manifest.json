@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/react-shopping-cart/static/js/main.8d73abab.js",
+    "main.js": "/react-shopping-cart/static/js/main.f0b75282.js",
+    "static/media/baedal.png": "/react-shopping-cart/static/media/baedal.3332b768cf1b51161b58.png",
     "static/media/cart.svg": "/react-shopping-cart/static/media/cart.ca2e0f49a6bf56373bd1c0362f6eaa6f.svg",
     "static/media/trash.svg": "/react-shopping-cart/static/media/trash.e71b2695c19bb9be8eed19dba20147fd.svg",
     "index.html": "/react-shopping-cart/index.html",
-    "main.8d73abab.js.map": "/react-shopping-cart/static/js/main.8d73abab.js.map"
+    "main.f0b75282.js.map": "/react-shopping-cart/static/js/main.f0b75282.js.map"
   },
   "entrypoints": [
-    "static/js/main.8d73abab.js"
+    "static/js/main.f0b75282.js"
   ]
 }
