@@ -41,8 +41,6 @@ function ProductDetailPage() {
     dispatch(fetchProductStart(idx));
   }, [dispatch, idx]);
 
-  console.log(product);
-
   return (
     // THINK: page 컴포넌트의 추상화레벨을 맞춰야할 것 같은데, 맞을까?
     // THINK: product 없이는 왜 안될까?
