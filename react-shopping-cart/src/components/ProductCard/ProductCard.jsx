@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
@@ -43,4 +44,4 @@ const Styled = {
   `,
 };
 
-export default ProductCard;
+export default memo(ProductCard);
