@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import styled, { css } from 'styled-components';
 
 // 재사용O
@@ -33,4 +34,4 @@ const Styled = {
   `,
 };
 
-export default ProductName;
+export default memo(ProductName);
