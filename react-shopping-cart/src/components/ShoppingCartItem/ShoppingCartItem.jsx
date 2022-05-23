@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 
@@ -74,4 +75,4 @@ const Styled = {
   `,
 };
 
-export default ShoppingCartItem;
+export default memo(ShoppingCartItem);
