@@ -12,9 +12,7 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route element={<ProductListPage />} path={PATH.HOME}>
-          <Route element={<ProductListPage />} path={PATH.PAGING_HOME} />
-        </Route>
+        <Route element={<ProductListPage />} path={PATH.HOME} />
         <Route path={PATH.PRODUCT_DETAIL} element={<ProductDetailPage />} />
         <Route path={PATH.SHOPPING_CART} element={<ShoppingCartPage />} />
         <Route path={PATH.ALL_PATH} element={<NotFoundPage />} />
