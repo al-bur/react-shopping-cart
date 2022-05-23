@@ -39,7 +39,7 @@ function ExpectedPaymentContainer() {
         padding="20px"
         width="100%"
       >
-        <ExpectedPaymentAmount price={totalPaymentCost} />
+        <ExpectedPaymentAmount price={totalPaymentCost.toLocaleString()} />
         <OrderButton>{`주문하기(${totalOrderProductsQuantity}개)`}</OrderButton>
       </FlexWrapper>
     </Styled.Root>

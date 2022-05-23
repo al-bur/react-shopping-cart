@@ -41,8 +41,6 @@ function ProductDetailPage() {
     dispatch(fetchProductStart(idx));
   }, [dispatch, idx]);
 
-  console.log(product);
-
   return (
     // THINK: page 컴포넌트의 추상화레벨을 맞춰야할 것 같은데, 맞을까?
     // THINK: product 없이는 왜 안될까?
@@ -70,9 +68,12 @@ function ProductDetailPage() {
             padding="15px 0px"
           >
             <div>금액</div>
-            <ProductPrice type="detail">{product.price}원</ProductPrice>
+            <ProductPrice type="detail">
+              {product.price.toLocaleString()}원
+            </ProductPrice>
           </FlexWrapper>
           {/* //TODO: 네이밍변경 */}
+
           <ShoppingCartButton
             $isincart={isCartItem}
             onClick={

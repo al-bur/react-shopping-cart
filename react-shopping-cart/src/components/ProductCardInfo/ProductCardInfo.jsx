@@ -15,7 +15,7 @@ function ProductCardInfo({ name, price, id, thumbnail, $isincart }) {
     <Styled.Root>
       <Styled.ProductCardInfoBox>
         <ProductName type="card">{name}</ProductName>
-        <ProductPrice type="card">{price}원</ProductPrice>
+        <ProductPrice type="card">{price.toLocaleString()}원</ProductPrice>
       </Styled.ProductCardInfoBox>
       <div
         onClick={

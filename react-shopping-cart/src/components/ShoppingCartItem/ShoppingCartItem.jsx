@@ -40,7 +40,9 @@ function ShoppingCartItem({ id, name, thumbnail, price, checked }) {
           <Trash />
         </Styled.TrashIconContainer>
         <ItemCounter id={id} />
-        <ProductPrice type="shoppingCart">{price}원</ProductPrice>
+        <ProductPrice type="shoppingCart">
+          {price.toLocaleString()}원
+        </ProductPrice>
       </Styled.RightContainer>
     </Styled.Root>
   );
