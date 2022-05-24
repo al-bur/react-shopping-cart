@@ -13,7 +13,7 @@ function NotFoundPage() {
     <FlexWrapper flexDirection="column" gap="40px">
       <img src={surpriseBaedal}></img>
       <div>페이지를 찾을 수 없습니다</div>
-      <Styled.HomeLinkButton onClick={() => navigate('/')}>
+      <Styled.HomeLinkButton onClick={() => navigate(PATH.HOME)}>
         홈으로
       </Styled.HomeLinkButton>
     </FlexWrapper>
