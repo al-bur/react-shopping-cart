@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // 재사용O
-function PaginationButton({ pageNum, to, isActive }) {
+function PaginationButton({ pageNum, isActive, ...props }) {
   return (
-    <Styled.Root to={to} isActive={isActive}>
+    <Styled.Root isActive={isActive} {...props}>
       {pageNum}
     </Styled.Root>
   );
 }
 
 const Styled = {
-  Root: styled(Link)`
+  Root: styled.button`
     width: 50px;
     height: 50px;
     text-decoration: none;
