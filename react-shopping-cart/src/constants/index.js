@@ -7,3 +7,10 @@ export const FETCH_PRODUCTS_LIMIT = '12';
 export const ZINDEX = {
   HEADER: 1,
 };
+
+export const PRODUCT_INITIAL_STATE = {
+  isLoading: false,
+  products: [],
+  product: null,
+  error: null,
+};

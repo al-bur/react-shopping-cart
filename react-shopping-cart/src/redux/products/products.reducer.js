@@ -1,13 +1,8 @@
 import productActionType from 'redux/products/products.types';
 
-const INITIAL_STATE = {
-  isLoading: false,
-  product: null,
-  products: [],
-  error: null,
-};
+import { PRODUCT_INITIAL_STATE } from 'constants';
 
-const productsReducer = (state = INITIAL_STATE, action) => {
+const productsReducer = (state = PRODUCT_INITIAL_STATE, action) => {
   switch (action.type) {
     case productActionType.fetchProductStart:
     case productActionType.fetchProductsStart:
