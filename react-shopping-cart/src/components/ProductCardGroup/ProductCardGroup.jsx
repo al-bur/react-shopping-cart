@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import FlexWrapper from 'components/@shared/FlexWrapper/FlexWrapper';
@@ -17,6 +18,7 @@ import { selectIsProductsLoading } from 'redux/products/products.selector';
 import { isInCart } from 'utils/check';
 
 function ProductCardGroup() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsProductsLoading);
   const products = useSelector(selectCurrentProducts);
@@ -26,6 +28,7 @@ function ProductCardGroup() {
 
   const handlePage = (page) => {
     setPage(page);
+    navigate(`?page=${page}`);
 
     localStorage.setItem('page', page);
   };
